@@ -43,15 +43,15 @@ function generateGrid() {
     const priceValue = safeEval(price);
 
     if (isNaN(volValue)) { // ← Missing parenthesis in original
-    gridContainer.innerHTML = '<p class="error">Invalid volume expression</p>';
+    gridContainer.innerHTML = '<p class="error">Enter volume</p>';
     return;
 }
     if (isNaN(alcValue)) {
-        gridContainer.innerHTML = '<p class="error">Invalid ABV expression</p>';
+        gridContainer.innerHTML = '<p class="error">Enter ABV (%)</p>';
         return;
     }
     if (isNaN(priceValue) || priceValue <= 0) {
-        gridContainer.innerHTML = '<p class="error">Invalid price expression</p>';
+        gridContainer.innerHTML = '<p class="error">Enter price</p>';
         return;
     }
 
