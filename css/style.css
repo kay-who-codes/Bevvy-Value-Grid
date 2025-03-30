@@ -114,6 +114,12 @@ th {
     font-weight: bold;
 }
 
+.error {
+    color: #ff6b6b;
+    text-align: center;
+    margin: 20px 0;
+}
+
 /* Hover effects (disabled on touch devices) */
 @media (hover: hover) {
     table.highlight-row td.highlighted-row,
