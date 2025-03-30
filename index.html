@@ -8,14 +8,23 @@
 </head>
 <body>
     <div class="title">
-      <h1>Bevvy Value Grid</h1>
+        <h1>Bevvy Value Grid</h1>
+    </div>
     <div class="container">
         <div class="inputs">
-            <input type="number" id="volume" placeholder="Volume (ml)" step="1">
-            <input type="number" id="alcohol" placeholder="Abv (%)" step="0.1">
-            <input type="number" id="price" placeholder="Price (£)" step="0.01">
+            <div class="input-wrapper">
+                <input type="number" id="volume" placeholder="Volume (ml)" step="1">
+            </div>
+            <div class="input-wrapper">
+                <input type="number" id="alcohol" placeholder="Abv (%)" step="0.1">
+            </div>
+            <div class="input-wrapper">
+                <input type="number" id="price" placeholder="Price (£)" step="0.01">
+            </div>
         </div>
-        <div id="gridContainer"></div>
+        <div class="table-scroll-container">
+            <div class="table-container" id="gridContainer"></div>
+        </div>
     </div>
     <script src="js/app.js"></script>
 </body>
